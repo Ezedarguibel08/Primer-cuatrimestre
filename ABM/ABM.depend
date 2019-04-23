@@ -9,3 +9,10 @@
 1555945237 source:c:\users\alumno\desktop\abm\empleado.c
 	"Empleado.h"
 
+1556022446 source:c:\users\alumno\desktop\1er-cuatrimestre\abm\main.c
+	<stdlib.h>
+	"Empleado.h"
+
+1556022446 c:\users\alumno\desktop\1er-cuatrimestre\abm\empleado.h
+	<stdio.h>
+

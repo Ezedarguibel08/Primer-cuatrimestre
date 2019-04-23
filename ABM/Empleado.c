@@ -2,23 +2,28 @@
 #include "Empleado.h"
 
 
-void cargarEmpleado(eEmpleado lista[], int tam)
+void cargarEmpleado(eEmpleado listaEmpleados[],int te, eSector listaSectores[], int ta)
 {
     int i;
 
-    i = buscarLibre(lista, tam);
+    i = buscarLibre(listaEmpleados, tam);
     if(i!=-1)
     {
         printf("Ingrese legajo: ");
-        scanf("%d", &lista[i].legajo);
+        scanf("%d", &listaEmpleados[i].legajo);
         printf("Ingrese nombre: ");
         fflush(stdin);
-        gets(lista[i].nombre);
+        gets(listaEmpleados[i].nombre);
         printf("Ingrese sexo: ");
         fflush(stdin);
-        scanf("%c", &lista[i].sexo);
+        scanf("%c", &listaEmpleados[i].sexo);
         printf("Ingrese sueldo bruto: ");
-        scanf("%f", &lista[i].sueldoBruto);
+        scanf("%f", &listaEmpleados[i].sueldoBruto);
+        printf("Elija sector: \n");
+        for(j=0;j<ta,j++)
+        {
+            printf("&d.\t%s\n",listaSectores[j].idSector);
+        }
 
         lista[i].sueldoNeto =lista[i].sueldoBruto*0.85;
 
