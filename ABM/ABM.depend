@@ -16,3 +16,13 @@
 1556022446 c:\users\alumno\desktop\1er-cuatrimestre\abm\empleado.h
 	<stdio.h>
 
+1556543543 source:c:\users\alumno\desktop\primer-cuatrimestre-master\abm\main.c
+	<stdlib.h>
+	"Empleado.h"
+
+1556541721 c:\users\alumno\desktop\primer-cuatrimestre-master\abm\empleado.h
+	<stdio.h>
+
+1556542170 source:c:\users\alumno\desktop\primer-cuatrimestre-master\abm\empleado.c
+	"Empleado.h"
+

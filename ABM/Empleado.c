@@ -5,8 +5,9 @@
 void cargarEmpleado(eEmpleado listaEmpleados[],int te, eSector listaSectores[], int ta)
 {
     int i;
+    int j;
 
-    i = buscarLibre(listaEmpleados, tam);
+    i = buscarLibre(listaEmpleados, ta);
     if(i!=-1)
     {
         printf("Ingrese legajo: ");
@@ -20,14 +21,14 @@ void cargarEmpleado(eEmpleado listaEmpleados[],int te, eSector listaSectores[], 
         printf("Ingrese sueldo bruto: ");
         scanf("%f", &listaEmpleados[i].sueldoBruto);
         printf("Elija sector: \n");
-        for(j=0;j<ta,j++)
+        for(j=0;j<ta;j++)
         {
             printf("&d.\t%s\n",listaSectores[j].idSector);
         }
 
-        lista[i].sueldoNeto =lista[i].sueldoBruto*0.85;
+        listaEmpleados[i].sueldoNeto =listaEmpleados[i].sueldoBruto*0.85;
 
-        lista[i].estado = OCUPADO;
+        listaEmpleados[i].estado = OCUPADO;
 
     }
     else
@@ -258,6 +259,22 @@ int contarCarlos(eEmpleado lista[], int tam)
 int buscarLegajo(eEmpleado lista[], int tam, int legajo)
 {
 
+}
+void mostrarSectores(eSector sectores[], int ts, eEmpleado empleados[], int te)
+{
+    int i;
+    int j;
+    for(i=0; i<ts;i++)
+    {
+        printf("%s:\n",sectores[i].descripcion);
+        for(j=0; j<te; j++)
+            {
+                if(sectores[i].idSector==empleados[j].idSector)
+                    {
+                        mostrarEmpleado(empleados[j],sectores,ts);
+                    }
+            }
+    }
 }
 
 

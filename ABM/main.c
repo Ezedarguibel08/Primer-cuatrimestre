@@ -22,10 +22,7 @@ int main()
 
     eEmpleado lista[T];
     inicializarEmpleados(lista,T);
-
     eSector sectores[3] = {{1,"Contabilidad",100},{2,"Sistemas",200},{3, "RRHH", 150}};
-
-
 
 
 hardcodearDatosEmpleados(lista,6);
@@ -35,7 +32,7 @@ hardcodearDatosEmpleados(lista,6);
         switch(opcion)
         {
             case 1:
-                cargarEmpleado(lista,  T);
+                cargarEmpleado(lista,  T, sectores, 3);
 
             break;
             case 2:
@@ -54,6 +51,9 @@ hardcodearDatosEmpleados(lista,6);
                 mostrarEmpleadosSueldoMaximo(lista,T);
                 printf("La cantidad de carlos es: %d\n", contarCarlos(lista,T));
 
+                break;
+            case 6:
+                mostrarSectores(sectores, 3, lista, T);
                 break;
 
 

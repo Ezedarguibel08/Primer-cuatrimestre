@@ -54,6 +54,7 @@ void borrarEmpleado(eEmpleado[], int, int);
 float buscarSueldoMaximo(eEmpleado[],int);
 void mostrarEmpleadosSueldoMaximo(eEmpleado[],int);
 int contarCarlos(eEmpleado[],int);
+void mostrarSectores(eSector sectores[], int, eEmpleado empleados[], int);
 
 
 
